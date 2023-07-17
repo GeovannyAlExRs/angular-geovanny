@@ -12,7 +12,7 @@
       </button>
       <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
         <ul class="navbar-nav">
-          <li class="nav-item" *ngFor="let item of mainMenu.defaultOptions" mat-list-item>
+          <li [routerLink]="item.router" class="nav-item" *ngFor="let item of mainMenu.defaultOptions" mat-list-item>
             <a class="nav-link active" aria-current="page" (click)="logoutUser(item.name)">
               <i [ngClass]="['uil',item.icon]"></i>
               <span>{{item.name}}</span>
