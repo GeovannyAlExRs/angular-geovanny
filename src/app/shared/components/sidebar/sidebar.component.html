@@ -14,7 +14,7 @@
     <div class="sidebar-menu__separator"></div>
 
     <ul class="nav flex-column gap-2 sidebar-menu__list">
-      <li class="nav-item btn text-start" *ngFor="let item of menuList.accessLink" mat-list-item (click)="closeMenu()">
+      <li class="nav-item btn text-start" [routerLink]="item.router" *ngFor="let item of menuList.accessLink" mat-list-item (click)="closeMenu()">
           <a class="nav-link" (click)="logoutUser(item.name)"><!-- *ngIf="users? item.band : !item.band" -->
               <i [ngClass]="['uil',item.icon]"></i>
               <span>{{item.name}}</span>

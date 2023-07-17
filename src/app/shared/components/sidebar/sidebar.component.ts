@@ -18,11 +18,11 @@ export class SidebarComponent implements OnInit {
 
   ngOnInit(): void {
     this.menuList.accessLink = [
-      { name: 'Home', icon: 'uil uil-estate', router: ['/'], band: !this.isAuthorized },
-      { name: 'Profile', icon: 'uil uil-brightness-plus', router: ['/'], band: false },
-      { name: 'Register', icon: 'uil uil-user-plus', router: ['/'], band: this.isAuthorized },
-      { name: 'Login', icon: 'uil uil-signin', router: ['/'], band: this.isAuthorized },
-      { name: 'Sign out', icon: 'uil uil-signout', router: ['/'], band: !this.isAuthorized }
+      { name: 'Home', icon: 'uil uil-estate', router: ['/home'], band: !this.isAuthorized },
+      { name: 'Profile', icon: 'uil uil-brightness-plus', router: ['/profile'], band: false },
+      { name: 'Register', icon: 'uil uil-user-plus', router: ['/auth/register'], band: this.isAuthorized },
+      { name: 'Login', icon: 'uil uil-signin', router: ['/auth/login'], band: this.isAuthorized },
+      { name: 'Sign out', icon: 'uil uil-signout', router: ['/home'], band: !this.isAuthorized }
     ]
   }
 
