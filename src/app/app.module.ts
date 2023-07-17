@@ -8,6 +8,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { HeaderModule } from '@shared/components/header/header.module';
 
+import { NgbNav, NgbNavOutlet } from '@ng-bootstrap/ng-bootstrap';
+
 @NgModule({
   declarations: [
     AppComponent
@@ -19,7 +21,9 @@ import { HeaderModule } from '@shared/components/header/header.module';
     BrowserAnimationsModule,
     MatSidenavModule,
 
-    HeaderModule
+    HeaderModule,
+
+    NgbNav
   ],
   providers: [],
   bootstrap: [AppComponent]
