@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { HeaderModule } from '@shared/components/header/header.module';
+import { SidebarModule } from '@shared/components/sidebar/sidebar.module';
 
 import { NgbNav, NgbNavOutlet } from '@ng-bootstrap/ng-bootstrap';
 
@@ -22,6 +23,7 @@ import { NgbNav, NgbNavOutlet } from '@ng-bootstrap/ng-bootstrap';
     MatSidenavModule,
 
     HeaderModule,
+    SidebarModule,
 
     NgbNav
   ],
