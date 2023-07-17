@@ -1,0 +1,51 @@
+@import '../../../../styles.scss';
+
+.sidebar-menu {
+  padding: $default-0;
+  margin: $default-0;
+
+  &__sub-container{
+    &__descriptions{
+      color: $text-primary-dark;
+      & h4 {
+        letter-spacing: 3px !important;
+        margin: $default-0;
+      }
+
+      & p {
+        font-size: $font-size-14;
+        margin: $default-0;
+        line-height: 1.2em;
+      }
+    }
+  }
+
+  &__separator {
+    margin: 1rem 0;
+    border-bottom: solid 1px $separator-line;
+  }
+
+  & ul {
+    li {
+      background-color: $background-1;
+      border-radius: $space-08;
+    }
+
+    & a {
+      font-size: $font-size-18;
+      padding: $default-0;
+      & span {
+        padding-left: $space-08;
+      }
+    }
+
+    & li:hover, li:active {
+      background-color: $background-2;
+      color: $primary;
+      transition: $transition-02s;
+    }
+    &::-webkit-scrollbar{
+      display: none;
+    }
+  }
+}
