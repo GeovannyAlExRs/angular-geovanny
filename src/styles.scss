@@ -31,7 +31,7 @@ $shadow-2: rgba(100, 104, 111, 0.2) 0px 7px 29px 0px;
 
 $separator-line: #f5f5f9;
 
-$font-family-ubuntu: 'Nova Round', sans-serif;
+$font-family-nova-round: 'Nova Round', sans-serif;
 $font-family-roboto: 'Roboto', Helvetica, sans-serif;
 
 $animation-2s: 200ms;
@@ -80,3 +80,27 @@ $font-size-14: 14px;
 $font-size-12: 12px;
 $font-size-10: 10px;
 $font-size-08: 8px;
+
+html, body {
+  margin: $default-0;
+  padding: default-0;
+  background-color: $background-2;
+  font-family: $font-family-roboto;
+
+}
+
+input, button, li , a {
+  cursor: pointer;
+  font-family: $font-family-nova-round;
+  font-size: $font-size-16;
+}
+
+button:disabled {
+  opacity: $opacity-05;
+}
+
+*,
+*::before,
+*::after {
+box-sizing: border-box;
+}
