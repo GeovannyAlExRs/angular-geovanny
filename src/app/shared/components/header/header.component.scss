@@ -1,50 +1,39 @@
 @import '../../../../styles.scss';
 
-.toolbar-background {
-  background: $secondary;
-  position: fixed;
-  top: 0;
-  z-index: 1;
+mat-toolbar {
+  padding: $default-0 !important;
 
   & button {
     color: $base;
   }
-
-  &__container {
-  padding: $default-0;
-  margin: $default-0;
+}
+.toolbar-background {
   width: $percentage-100;
-
-  &__img {
-    width: $frame-space-200;
-  }
-
-  & li {
-    list-style: none;
-    text-decoration: none;
-
-    text-align: center;
-    width: $frame-space-100 + $space-20;
-
-    color: $background-2;
-    border-radius: $space-08;
-    padding: $default-0 $space-08;
-
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-  }
-
-  & li:hover, li:active {
-    cursor: pointer;
-    color: $primary;
-    background-color: $base-light;
-    transition: $transition-02s;
-  }
-}
+  background: $secondary !important;
 }
 
+li {
+  border-radius: $space-08;
+  margin: $default-0 $space-08;
 
-.list-label {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+  & a {
+    color: $base !important;
+  }
+}
+
+li:hover, li:active {
+  background-color: $secondary-light;
+  transition: $transition-02s;
+
+  & a {
+    color: $white !important;
+  }
+}
+
+span {
   margin-left: $space-05;
 }
