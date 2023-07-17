@@ -1,0 +1,50 @@
+@import '../../../../styles.scss';
+
+.toolbar-background {
+  background: $secondary;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+
+  & button {
+    color: $base;
+  }
+
+  &__container {
+  padding: $default-0;
+  margin: $default-0;
+  width: $percentage-100;
+
+  &__img {
+    width: $frame-space-200;
+  }
+
+  & li {
+    list-style: none;
+    text-decoration: none;
+
+    text-align: center;
+    width: $frame-space-100 + $space-20;
+
+    color: $background-2;
+    border-radius: $space-08;
+    padding: $default-0 $space-08;
+
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  & li:hover, li:active {
+    cursor: pointer;
+    color: $primary;
+    background-color: $base-light;
+    transition: $transition-02s;
+  }
+}
+}
+
+
+.list-label {
+  margin-left: $space-05;
+}
